@@ -1,3 +1,12 @@
 export default function Home() {
-  return <div>Hi</div>;
+  return (
+    <button
+      onClick={async () => {
+        "use server";
+        console.log("clicked");
+      }}
+    >
+      Click me
+    </button>
+  );
 }
